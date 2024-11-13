@@ -1,0 +1,85 @@
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+
+/*-- -------------------------- -->
+<---          Home           -->
+<--- -------------------------- -*/
+
+#hero-section {
+  width: 100%;
+  height: 700px;
+  background-color: #001f3f;
+  margin-top: -120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1350px;
+  width: 100%;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+
+.hero-text {
+  margin-top: 120px;
+  color: white;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  width: 60%;
+  line-height: 1.8rem;
+}
+
+.hero-image {
+  margin-left: 25px;
+  margin-top: 185px;
+}
+
+.hero-image img {
+  min-width: 100px;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column; /* Stack items on top of each other */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add more padding on mobile */
+  }
+
+  .hero-text {
+    max-width: 100%; /* Allow text to take full width */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Smaller paragraph size for mobile */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .hero-image {
+    max-height: 280px;
+    display: flex; /* Center image */
+    justify-content: center;
+    margin: 0px;
+    margin-top: 35px; /* Space above the image */
+  }
+
+  .hero-image img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
